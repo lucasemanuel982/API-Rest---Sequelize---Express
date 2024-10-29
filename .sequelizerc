@@ -1,0 +1,10 @@
+
+// Como mudei as pastas de diretório, tenho que informar de onde elas estão
+const path = require('path');
+
+module.exports = {
+    'config': path.resolve('./src/database/config', 'config.json'),
+    'models-path': path.resolve('./src/database/models'),
+    'migrations-path': path.resolve('./src/database/migrations'),
+    'seeders-path': path.resolve('./src/database/seeders'),
+}
